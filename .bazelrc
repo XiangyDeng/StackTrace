@@ -1,0 +1,3 @@
+build --strip=never
+build --copt=-g
+build --copt=-ggdb

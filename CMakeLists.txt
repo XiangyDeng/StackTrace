@@ -9,8 +9,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -rdynamic -g3 -fPIC)
 
 # 添加包含的头文件目录
-include_directories(include)
+include_directories(component)
 
 # 添加执行文件
-add_executable(MyProject main.cpp)
-target_link_libraries(MyProject pthread dl /home/melody/project/signal_processor/libmyadd.a)
+add_executable(MyProject ./main.cc)
+target_link_libraries(MyProject pthread dl /home/melody/project/stack_trace/lib/libmyadd.so)
